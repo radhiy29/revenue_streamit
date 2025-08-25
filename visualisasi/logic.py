@@ -243,7 +243,7 @@ def tampilkan_visualisasi(df: pd.DataFrame, periode: str = "Harian"):
                 2. Tren pergerakan
                 3. Perbandingan produk (jika ada)
                 4. Perbandingan daerah (jika ada)
-                5. Insight, rekomendasi, dan strategi
+                5. Insight & Rekomendasi
                 """
                 response = model_gemini.generate_content(prompt)
                 hasil = response.text
