@@ -1,0 +1,6 @@
+streamlit>=1.24
+pandas>=1.5
+openpyxl
+plotly
+python-dotenv
+openai
