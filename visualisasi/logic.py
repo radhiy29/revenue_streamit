@@ -8,7 +8,7 @@ import os
 GEMINI_API_KEY = st.secrets.get("GEMINI_API_KEY", os.getenv("GEMINI_API_KEY"))
 if GEMINI_API_KEY and GEMINI_API_KEY.strip():
     genai.configure(api_key=GEMINI_API_KEY)
-    model_gemini = genai.GenerativeModel("gemini-1.5-flash")  
+    model_gemini = genai.GenerativeModel("gemini-2.5-flash")  
 else:
     print("⚠️ GEMINI_API_KEY belum diatur! Gunakan export/set di terminal atau ganti default value.")
     model_gemini = None
